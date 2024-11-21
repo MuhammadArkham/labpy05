@@ -136,4 +136,6 @@ if __name__ == "__main__":
 ```
 
 ## Hasil kode Program
-![Foto](
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-11-21%20195823.png?raw=true)
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-11-21%20195854.png?raw=true)
+![Foto](https://github.com/MuhammadArkham/Foto/blob/main/Screenshot%202024-11-21%20200245.png?raw=true)
