@@ -142,3 +142,18 @@ if __name__ == "__main__":
 
 ## Gambar Flowchart
 ![Foto](https://github.com/MuhammadArkham/labpy05/blob/main/Flowchart%20.png?raw=true)
+
+## Penjelasan alur algoritma program
+
+ program ini dirancang untuk mengelola data mahasiswa dengan mudah. Menggunakan struktur dictionary sebagai tempat penyimpanan, program ini memungkinkan pengguna untuk melakukan berbagai tindakan, seperti menambahkan, mengedit, menghapus, melihat, dan mencari informasi serta nilai akademik mahasiswa secara efisien.
+
+__Struktur Dasar Kode ini memiliki beberapa komponen utama:__
+```
+mahasiswa: Sebuah dictionary yang digunakan untuk menyimpan informasi mahasiswa
+
+tambah_data(): Fungsi menambah mahasiswa baru
+
+tampilkan_data(): Fungsi menampilkan data mahasiswa
+
+main():Fungsi utama yang berisi menu interaktif untuk menjalankan program.
+```
