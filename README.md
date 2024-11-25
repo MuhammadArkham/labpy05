@@ -180,7 +180,6 @@ def tambah_data():
             'akhir': nilai_akhir
         }
         
-        # Tanya mau tambah data lagi atau tidak
         lanjut = input("\nTambah data (y/t) ? ")
         if lanjut.lower() == 't':
             break
@@ -197,7 +196,6 @@ def ubah_data():
 
     nim = input("Masukkan NIM mahasiswa yang akan diubah: ")
     
-    # Cek apakah NIM ada
     if nim in mahasiswa:
         print("\nPilih data yang akan diubah:")
         print("1. Nama")
@@ -207,7 +205,6 @@ def ubah_data():
         
         pilihan = input("Masukkan pilihan (1-4): ")
         
-        # ini Proses perubahan data sesuai pilihan
         if pilihan == '1':
             mahasiswa[nim]['nama'] = input("Masukkan nama baru: ")
         elif pilihan == '2':
@@ -237,7 +234,7 @@ Penjelasan:
 def hapus_data():
     nim = input("Masukkan NIM mahasiswa yang akan dihapus: ")
     if nim in mahasiswa:
-        del mahasiswa[nim]  # Hapus data dari dictionary
+        del mahasiswa[nim] 
         print("Data berhasil dihapus!")
     else:
         print("NIM tidak ditemukan!")
@@ -249,7 +246,7 @@ Penjelasan:
 5. FUNGSI TAMPILKAN DATA
 ```python
 def tampilkan_data():
-    if not mahasiswa:  # Cek apakah dictionary kosong
+    if not mahasiswa: 
         print("Tidak ada data!")
         return
     
@@ -259,7 +256,6 @@ def tampilkan_data():
     print("| No |     Nama       |     NIM      | Tugas  |  UTS  |  UAS  | Akhir  |")
     print("="*72)
     
-    # Tampilkan data dalam bentuk tabel
     for i, (nim, data) in enumerate(mahasiswa.items(), 1):
         print("| {:<2} | {:<14} | {:<12} | {:<6} | {:<5} | {:<5} | {:<7.2f}|".format(
             i, data['nama'], nim, data['tugas'], data['uts'], data['uas'], data['akhir']))
