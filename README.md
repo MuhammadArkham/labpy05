@@ -148,12 +148,42 @@ if __name__ == "__main__":
  program ini dirancang untuk mengelola data mahasiswa dengan mudah. Menggunakan struktur dictionary sebagai tempat penyimpanan, program ini memungkinkan pengguna untuk melakukan berbagai tindakan, seperti menambahkan, mengedit, menghapus, melihat, dan mencari informasi serta nilai akademik mahasiswa secara efisien.
 
 __Struktur Dasar Kode ini memiliki beberapa komponen utama:__
+
+Program menggunakan dictionary mahasiswa untuk menyimpan data
+Setiap mahasiswa diidentifikasi dengan NIM sebagai key
+Data mahasiswa meliputi: nama, nilai tugas, UTS, UAS, dan nilai akhir
+
+
+Fungsi-fungsi Utama:
+```python
+tambah_data()
 ```
-mahasiswa: Sebuah dictionary yang digunakan untuk menyimpan informasi mahasiswa
-
-tambah_data(): Fungsi menambah mahasiswa baru
-
-tampilkan_data(): Fungsi menampilkan data mahasiswa
-
-main():Fungsi utama yang berisi menu interaktif untuk menjalankan program.
+Memungkinkan input data mahasiswa baru
+Menghitung nilai akhir dengan bobot: Tugas (30%), UTS (35%), UAS (35%)
+Memiliki opsi untuk menambah data lagi atau berhenti
+```python
+ubah_data()
 ```
+Mencari mahasiswa berdasarkan NIM
+Memungkinkan perubahan nama atau nilai
+Menghitung ulang nilai akhir jika nilai diubah
+```python
+C) hapus_data()
+```
+Menghapus data mahasiswa berdasarkan NIM
+Memberikan konfirmasi keberhasilan/kegagalan
+```python
+tampilkan_data()
+```
+Menampilkan tabel berisi semua data mahasiswa
+Format tabel rapi dengan header dan separator
+```python
+cari_data()
+```
+Mencari dan menampilkan detail mahasiswa berdasarkan NIM
+Menampilkan semua informasi mahasiswa termasuk nilai akhir
+```python
+main()
+
+Menu utama program dengan 6 pilihan
+Loop terus berjalan sampai user memilih keluar
